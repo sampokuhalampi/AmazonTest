@@ -49,7 +49,6 @@ Verify book title found
         Fail    Book: '${book_title}' not found
     END
 
-
 Scroll to Footer
     Scroll Element Into View     xpath=//*[@id="navFooter"]
 
@@ -57,7 +56,6 @@ Verify Get To Know Us Text
     ${page_contains_get_to_know_us}=    Run Keyword And Return Status    Wait Until Page Contains    Get to Know Us
     ${get_to_know_us_element_exists}=    Run Keyword And Return Status    Page Should Contain    Get to Know Us
     Run Keyword If    '${get_to_know_us_element_exists}' == 'True'    Log    Get to Know Us text found    ELSE    Log    ERROR: Get to Know Us text not found
-
 
 Hover Over Back to Top button
     Mouse Over    xpath=//*[@id="navBackToTop"]
